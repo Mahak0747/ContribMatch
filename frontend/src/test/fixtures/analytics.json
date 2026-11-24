@@ -1,0 +1,142 @@
+{
+ "totals": {
+  "profiles": 2,
+  "recommendation_runs": 2,
+  "recommendations_generated": 6,
+  "issues_analyzed": 8,
+  "unique_issues_recommended": 4,
+  "cached_issues": 4
+ },
+ "average_scores": {
+  "overall": 36.8,
+  "semantic_similarity": 44.5,
+  "skill_compatibility": 25.0,
+  "experience_compatibility": 51.4,
+  "repository_activity": 6.1,
+  "beginner_friendliness": 35.0
+ },
+ "score_distribution": [
+  {
+   "label": "0-20",
+   "count": 3
+  },
+  {
+   "label": "20-40",
+   "count": 0
+  },
+  {
+   "label": "40-60",
+   "count": 2
+  },
+  {
+   "label": "60-80",
+   "count": 0
+  },
+  {
+   "label": "80-100",
+   "count": 1
+  }
+ ],
+ "skill_compatibility_distribution": [
+  {
+   "label": "0-20",
+   "count": 4
+  },
+  {
+   "label": "20-40",
+   "count": 0
+  },
+  {
+   "label": "40-60",
+   "count": 1
+  },
+  {
+   "label": "60-80",
+   "count": 0
+  },
+  {
+   "label": "80-100",
+   "count": 1
+  }
+ ],
+ "matching_skill_count_distribution": [
+  {
+   "label": "0",
+   "count": 4
+  },
+  {
+   "label": "1",
+   "count": 1
+  },
+  {
+   "label": "2",
+   "count": 1
+  },
+  {
+   "label": "3+",
+   "count": 0
+  }
+ ],
+ "top_matching_skills": [
+  {
+   "label": "Python",
+   "count": 2
+  },
+  {
+   "label": "PyTorch",
+   "count": 1
+  }
+ ],
+ "requested_domains": [
+  {
+   "label": "machine learning",
+   "count": 1
+  },
+  {
+   "label": "web development",
+   "count": 1
+  }
+ ],
+ "recommended_language_distribution": [
+  {
+   "label": "Go",
+   "count": 3
+  },
+  {
+   "label": "Python",
+   "count": 3
+  }
+ ],
+ "top_labels": [
+  {
+   "label": "advanced",
+   "count": 2
+  },
+  {
+   "label": "good first issue",
+   "count": 2
+  },
+  {
+   "label": "machine-learning",
+   "count": 2
+  },
+  {
+   "label": "bug",
+   "count": 1
+  },
+  {
+   "label": "documentation",
+   "count": 1
+  }
+ ],
+ "experience_level_distribution": [
+  {
+   "label": "advanced",
+   "count": 1
+  },
+  {
+   "label": "beginner",
+   "count": 1
+  }
+ ]
+}

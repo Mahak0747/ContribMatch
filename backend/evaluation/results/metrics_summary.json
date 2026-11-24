@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "evaluated_at": "2026-11-23T05:04:28.436485+00:00",
+    "k": 5,
+    "bootstrap_seed": 12345,
+    "reference_time_for_activity_scores": "2026-11-22T09:09:34.054130+00:00",
+    "repo_metadata_in_candidates": false,
+    "versions": {
+      "python": "3.12.3",
+      "sentence-transformers": "not installed",
+      "torch": "not installed",
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.5",
+      "pandas": "3.1.1"
+    },
+    "input_hashes_sha256_16": {
+      "queries": "1f524757801090e5",
+      "candidates": "9514f836c4637918",
+      "judgments": "45dee590409283e2"
+    }
+  },
+  "dataset": {
+    "n_queries": 20,
+    "n_candidates": 240,
+    "candidates_per_query": {
+      "min": 12,
+      "max": 12
+    },
+    "label_counts": {
+      "0": 61,
+      "1": 87,
+      "2": 92
+    },
+    "queries_with_any_relevant_lenient": 20,
+    "queries_with_any_relevant_strict": 20,
+    "label_counts_by_pool": {
+      "broad": {
+        "0": 18,
+        "1": 35,
+        "2": 27
+      },
+      "specific": {
+        "0": 5,
+        "1": 51,
+        "2": 64
+      },
+      "distractor": {
+        "0": 38,
+        "1": 1,
+        "2": 1
+      }
+    }
+  },
+  "systems": {
+    "keyword": {
+      "status": "ok",
+      "metrics": {
+        "p@5": {
+          "mean": 0.93,
+          "ci95": [
+            0.86,
+            0.9800000000000001
+          ],
+          "n_queries": 20
+        },
+        "recall@5": {
+          "mean": 0.5213293650793651,
+          "ci95": [
+            0.48690476190476184,
+            0.5516865079365079
+          ],
+          "n_queries": 20
+        },
+        "ndcg@5": {
+          "mean": 0.7807830827221791,
+          "ci95": [
+            0.7060575193109003,
+            0.8463250381721974
+          ],
+          "n_queries": 20
+        },
+        "mrr": {
+          "mean": 0.95,
+          "ci95": [
+            0.875,
+            1.0
+          ],
+          "n_queries": 20
+        },
+        "p@5_strict": {
+          "mean": 0.6100000000000001,
+          "ci95": [
+            0.5,
+            0.7100000000000001
+          ],
+          "n_queries": 20
+        },
+        "recall@5_strict": {
+          "mean": 0.6851190476190476,
+          "ci95": [
+            0.6048809523809524,
+            0.7676190476190476
+          ],
+          "n_queries": 20
+        },
+        "mrr_strict": {
+          "mean": 0.7875,
+          "ci95": [
+            0.6625,
+            0.9
+          ],
+          "n_queries": 20
+        }
+      }
+    },
+    "semantic": {
+      "status": "not_run",
+      "reason": "Could not load embedding model 'sentence-transformers/all-MiniLM-L6-v2': ModuleNotFoundError"
+    },
+    "hybrid": {
+      "status": "not_run",
+      "reason": "Could not load embedding model 'sentence-transformers/all-MiniLM-L6-v2': ModuleNotFoundError"
+    },
+    "random_reference": {
+      "status": "ok",
+      "note": "expected values of a random ordering (1000 seeded shuffles per query); a reference, not a system",
+      "metrics": {
+        "p@5": {
+          "mean": 0.74622,
+          "ci95": [
+            0.7004400000000001,
+            0.7863300000000001
+          ],
+          "n_queries": 20
+        },
+        "recall@5": {
+          "mean": 0.4167150198412698,
+          "ci95": [
+            0.4150938095238095,
+            0.4180430158730159
+          ],
+          "n_queries": 20
+        },
+        "ndcg@5": {
+          "mean": 0.5444766569704452,
+          "ci95": [
+            0.5163466178654239,
+            0.5750036731534711
+          ],
+          "n_queries": 20
+        },
+        "mrr": {
+          "mean": 0.8628313095238095,
+          "ci95": [
+            0.8343688095238095,
+            0.8872613095238095
+          ],
+          "n_queries": 20
+        },
+        "p@5_strict": {
+          "mean": 0.38116,
+          "ci95": [
+            0.31667,
+            0.44365000000000004
+          ],
+          "n_queries": 20
+        },
+        "recall@5_strict": {
+          "mean": 0.41426976190476184,
+          "ci95": [
+            0.4117195238095238,
+            0.41696583333333337
+          ],
+          "n_queries": 20
+        },
+        "mrr_strict": {
+          "mean": 0.5936176172438673,
+          "ci95": [
+            0.530413272005772,
+            0.6512028625541125
+          ],
+          "n_queries": 20
+        }
+      }
+    },
+    "oracle_reference": {
+      "status": "ok",
+      "note": "the best possible ordering on this data (upper bound), a reference, not a system",
+      "metrics": {
+        "p@5": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "n_queries": 20
+        },
+        "recall@5": {
+          "mean": 0.5700396825396825,
+          "ci95": [
+            0.5347222222222222,
+            0.6117063492063493
+          ],
+          "n_queries": 20
+        },
+        "ndcg@5": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "n_queries": 20
+        },
+        "mrr": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "n_queries": 20
+        },
+        "p@5_strict": {
+          "mean": 0.8300000000000001,
+          "ci95": [
+            0.7100000000000001,
+            0.93
+          ],
+          "n_queries": 20
+        },
+        "recall@5_strict": {
+          "mean": 0.9360119047619048,
+          "ci95": [
+            0.8818452380952382,
+            0.9833333333333334
+          ],
+          "n_queries": 20
+        },
+        "mrr_strict": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "n_queries": 20
+        }
+      }
+    }
+  },
+  "paired_comparisons": {}
+}

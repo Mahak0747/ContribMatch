@@ -1,0 +1,21 @@
+query_id,description,skills,learning_interests,experience_level,domains,preferred_languages
+q01,Beginner web backend with Flask,Python|Flask|HTML,Docker,beginner,web development,Python
+q02,Beginner front-end developer,JavaScript|HTML|CSS,TypeScript,beginner,web development,JavaScript
+q03,Intermediate machine-learning engineer,Python|PyTorch|NumPy,Rust,intermediate,machine learning,Python
+q04,Advanced systems programmer,Rust|C++|Linux,WebAssembly,advanced,systems programming,Rust
+q05,Intermediate React/TypeScript developer,React|TypeScript|CSS,GraphQL,intermediate,web development,TypeScript
+q06,Beginner Android/Java developer,Java|Android|Git,Kotlin,beginner,mobile development,Java
+q07,Intermediate cloud/DevOps engineer in Go,Go|Docker|Kubernetes,Terraform,intermediate,devops,Go
+q08,Beginner data analyst,Python|Pandas|SQL,machine learning,beginner,data science,Python
+q09,Advanced Python backend developer,Python|Django|PostgreSQL,Rust,advanced,web development,Python
+q10,Intermediate game developer,C#|Unity,shaders,intermediate,game development,C#
+q11,Beginner documentation contributor,Markdown|Git|technical writing,,beginner,documentation,
+q12,Intermediate iOS developer,Swift|iOS|Xcode,SwiftUI,intermediate,mobile development,Swift
+q13,Advanced security engineer,Python|cryptography|penetration testing,Rust,advanced,security,Python
+q14,Intermediate Ruby on Rails developer,Ruby|Rails|PostgreSQL,JavaScript,intermediate,web development,Ruby
+q15,Beginner C command-line developer,C|Linux|Makefile,Rust,beginner,command line tools,C
+q16,Intermediate PHP/Laravel developer,PHP|Laravel|MySQL,Docker,intermediate,web development,PHP
+q17,Advanced TypeScript tooling developer,TypeScript|Node.js|GraphQL,,advanced,developer tools,TypeScript
+q18,Intermediate NLP practitioner,Python|scikit-learn|NLP,LLM,intermediate,natural language processing,Python
+q19,Beginner Kotlin Android developer,Kotlin|Android,Jetpack Compose,beginner,mobile development,Kotlin
+q20,Intermediate infrastructure automation engineer,Python|Ansible|Linux|Bash,Kubernetes,intermediate,devops,Python

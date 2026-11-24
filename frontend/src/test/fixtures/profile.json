@@ -1,0 +1,18 @@
+{
+ "id": 1,
+ "skills": [
+  "Python",
+  "PyTorch"
+ ],
+ "learning_interests": [
+  "Rust"
+ ],
+ "experience_level": "beginner",
+ "domains": [
+  "machine learning"
+ ],
+ "preferred_languages": [
+  "Python"
+ ],
+ "created_at": "2026-11-21T06:41:39.274068Z"
+}

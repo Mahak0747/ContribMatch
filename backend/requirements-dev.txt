@@ -1,0 +1,4 @@
+-r requirements.txt
+# testing (9.0.3+ fixes PYSEC-2026-1845)
+pytest>=9.0.3,<10
+pip-audit>=2.7

@@ -1,0 +1,192 @@
+{
+ "id": 1,
+ "profile_id": 1,
+ "created_at": "2026-11-21T06:41:39.309153Z",
+ "issues_analyzed": 4,
+ "top_k": 10,
+ "model": "test-concept-embedder",
+ "weights": {
+  "semantic": 0.45,
+  "skill": 0.2,
+  "experience": 0.15,
+  "activity": 0.1,
+  "beginner": 0.1
+ },
+ "search_queries": [
+  "is:issue is:open archived:false no:assignee language:Python label:\"good first issue\",\"beginner\",\"help wanted\" machine learning in:title,body",
+  "is:issue is:open archived:false no:assignee language:Python label:\"good first issue\",\"beginner\",\"help wanted\""
+ ],
+ "warnings": [],
+ "stale_data": false,
+ "recommendations": [
+  {
+   "rank": 1,
+   "issue": {
+    "id": 1001,
+    "number": 1,
+    "title": "Add PyTorch dataloader tests",
+    "body": "Training the neural network with PyTorch in Python. Needs unit tests for the dataloader.",
+    "url": "https://github.com/octo/alpha/issues/1",
+    "state": "open",
+    "labels": [
+     "good first issue",
+     "machine-learning"
+    ],
+    "comments": 1,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-02-01T00:00:00Z",
+    "repo_full_name": "octo/alpha",
+    "repo_url": "https://github.com/octo/alpha",
+    "repo_description": "Alpha ML toolkit",
+    "repo_language": "Python",
+    "repo_stars": 120,
+    "repo_pushed_at": "2026-02-10T00:00:00Z"
+   },
+   "scores": {
+    "overall": 88.4,
+    "semantic_similarity": 100.0,
+    "skill_compatibility": 100.0,
+    "experience_compatibility": 100.0,
+    "repository_activity": 8.8,
+    "beginner_friendliness": 75.0
+   },
+   "cosine_similarity": 0.9714,
+   "matching_skills": [
+    "Python",
+    "PyTorch"
+   ],
+   "relevant_labels": [
+    "good first issue",
+    "machine-learning"
+   ],
+   "explanation": "Mentions your skills: Python, PyTorch. The repository's main language is Python, one of your preferred languages. Relates to your preferred domain: machine learning. Labelled 'good first issue', a beginner-friendly signal, which fits your beginner level. The repository was last pushed to 284 day(s) ago; the issue was updated 293 day(s) ago. Semantic similarity to your profile: 100/100 (strong).",
+   "potential_skills_to_learn": [],
+   "difficulty_signals": [
+    "label 'good first issue' (beginner signal)"
+   ]
+  },
+  {
+   "rank": 2,
+   "issue": {
+    "id": 1002,
+    "number": 2,
+    "title": "Fix README typo",
+    "body": "Fix typo in the docs.",
+    "url": "https://github.com/octo/alpha/issues/2",
+    "state": "open",
+    "labels": [
+     "documentation"
+    ],
+    "comments": 2,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-02-01T00:00:00Z",
+    "repo_full_name": "octo/alpha",
+    "repo_url": "https://github.com/octo/alpha",
+    "repo_description": "Alpha ML toolkit",
+    "repo_language": "Python",
+    "repo_stars": 120,
+    "repo_pushed_at": "2026-02-10T00:00:00Z"
+   },
+   "scores": {
+    "overall": 51.5,
+    "semantic_similarity": 66.8,
+    "skill_compatibility": 50.0,
+    "experience_compatibility": 50.0,
+    "repository_activity": 8.8,
+    "beginner_friendliness": 30.0
+   },
+   "cosine_similarity": 0.4342,
+   "matching_skills": [
+    "Python"
+   ],
+   "relevant_labels": [],
+   "explanation": "Mentions your skills: Python. The repository's main language is Python, one of your preferred languages. Relates to your preferred domain: machine learning. The repository was last pushed to 284 day(s) ago; the issue was updated 293 day(s) ago. Semantic similarity to your profile: 67/100 (moderate).",
+   "potential_skills_to_learn": [],
+   "difficulty_signals": []
+  },
+  {
+   "rank": 3,
+   "issue": {
+    "id": 1004,
+    "number": 4,
+    "title": "Refactor gradient engine",
+    "body": "Complex gradient rewrite.",
+    "url": "https://github.com/octo/beta/issues/4",
+    "state": "open",
+    "labels": [
+     "advanced"
+    ],
+    "comments": 12,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-02-01T00:00:00Z",
+    "repo_full_name": "octo/beta",
+    "repo_url": "https://github.com/octo/beta",
+    "repo_description": null,
+    "repo_language": "Go",
+    "repo_stars": 5,
+    "repo_pushed_at": "2025-01-01T00:00:00Z"
+   },
+   "scores": {
+    "overall": 45.3,
+    "semantic_similarity": 100.0,
+    "skill_compatibility": 0.0,
+    "experience_compatibility": 0.0,
+    "repository_activity": 3.3,
+    "beginner_friendliness": 0.0
+   },
+   "cosine_similarity": 0.9665,
+   "matching_skills": [],
+   "relevant_labels": [
+    "advanced"
+   ],
+   "explanation": "No explicit overlap with your listed skills, domains or interests was found in this issue; the match relies on semantic similarity. Labelled 'advanced', which suggests higher difficulty. The repository was last pushed to 689 day(s) ago; the issue was updated 293 day(s) ago. Semantic similarity to your profile: 100/100 (strong).",
+   "potential_skills_to_learn": [
+    "go"
+   ],
+   "difficulty_signals": [
+    "label 'advanced' (higher-difficulty signal)",
+    "12 comments (long discussion)"
+   ]
+  },
+  {
+   "rank": 4,
+   "issue": {
+    "id": 1003,
+    "number": 3,
+    "title": "Dockerfile build fails",
+    "body": "Container pipeline for docker deploy is broken.",
+    "url": "https://github.com/octo/beta/issues/3",
+    "state": "open",
+    "labels": [
+     "bug"
+    ],
+    "comments": 3,
+    "created_at": "2026-01-01T00:00:00Z",
+    "updated_at": "2026-02-01T00:00:00Z",
+    "repo_full_name": "octo/beta",
+    "repo_url": "https://github.com/octo/beta",
+    "repo_description": null,
+    "repo_language": "Go",
+    "repo_stars": 5,
+    "repo_pushed_at": "2025-01-01T00:00:00Z"
+   },
+   "scores": {
+    "overall": 10.8,
+    "semantic_similarity": 0.0,
+    "skill_compatibility": 0.0,
+    "experience_compatibility": 50.0,
+    "repository_activity": 3.3,
+    "beginner_friendliness": 30.0
+   },
+   "cosine_similarity": 0.0006,
+   "matching_skills": [],
+   "relevant_labels": [],
+   "explanation": "No explicit overlap with your listed skills, domains or interests was found in this issue; the match relies on semantic similarity. The repository was last pushed to 689 day(s) ago; the issue was updated 293 day(s) ago. Semantic similarity to your profile: 0/100 (weak).",
+   "potential_skills_to_learn": [
+    "go",
+    "docker"
+   ],
+   "difficulty_signals": []
+  }
+ ]
+}

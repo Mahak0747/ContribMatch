@@ -1,0 +1,45 @@
+# Render Blueprint for the ContribMatch API (FastAPI). The frontend is deployed separately on Vercel and the
+# database is Neon PostgreSQL; see docs/DEPLOYMENT.md for the full, ordered setup guide.
+#
+# Secrets (`sync: false`) are NOT stored in this file: Render asks for them in the dashboard when the
+# Blueprint is created. Never put real values in this repository.
+services:
+  - type: web
+    name: contribmatch-api
+    runtime: python
+    region: oregon               # keep the same region as your Neon project (Neon: AWS US West 2, Oregon)
+    # MEMORY: PyTorch plus the embedding model needs well over 512 MB of RAM, so Render's Free and Starter
+    # instances (512 MB) are very likely to run out of memory on the first recommendation request. "standard"
+    # (2 GB) is the smallest size expected to work. This is an estimate: it has not been measured.
+    plan: standard
+    rootDir: backend
+    autoDeploy: false            # deploy manually from the dashboard until you are happy with the setup
+    healthCheckPath: /api/health/live   # liveness only: never touches the database, so Neon can sleep
+    # 1) CPU-only PyTorch (the default wheel bundles ~2 GB of CUDA libraries that Render cannot use)
+    # 2) everything else   3) download the model files now so the first user request does not have to
+    buildCommand: >-
+      pip install --upgrade pip &&
+      pip install torch --index-url https://download.pytorch.org/whl/cpu &&
+      pip install -r requirements.txt &&
+      python scripts/prefetch_model.py
+    # Render provides $PORT. A single worker on purpose: each worker would load its own copy of the model.
+    startCommand: 'uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips "*"'
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.3"
+      - key: ENVIRONMENT
+        value: production
+      - key: DEBUG
+        value: "false"
+      - key: LOG_LEVEL
+        value: INFO
+      - key: PRELOAD_MODEL       # false = load the model lazily on the first recommendation request
+        value: "false"
+      - key: MODEL_CACHE_DIR     # must match what the build step downloaded into (resolved from backend/)
+        value: .model_cache
+      - key: DATABASE_URL        # SECRET: the pooled Neon connection string
+        sync: false
+      - key: GITHUB_TOKEN        # SECRET: backend only (no scopes needed for public data)
+        sync: false
+      - key: CORS_ORIGINS        # your Vercel URL, e.g. https://contribmatch.vercel.app
+        sync: false

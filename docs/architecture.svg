@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 570" width="960" height="570" role="img" aria-labelledby="t d" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <title id="t">ContribMatch architecture</title>
+  <desc id="d">The React frontend calls the FastAPI backend through the /api proxy. The backend queries the GitHub REST API, runs a local embedding model and the hybrid ranking engine, and stores results in SQLite.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker>
+    <style>
+      .bg{fill:#0a1020}
+      .box{fill:#0f1830;stroke:#2a3a66;stroke-width:1.2}
+      .group{fill:none;stroke:#2a3a66;stroke-width:1.2;stroke-dasharray:5 4}
+      .ext{fill:#111a33;stroke:#475569;stroke-width:1.2}
+      .acc{stroke:#8b5cf6}
+      .acc2{stroke:#3b82f6}
+      .h{fill:#e2e8f0;font-size:14px;font-weight:600}
+      .t{fill:#94a3b8;font-size:12px}
+      .g{fill:#c4b5fd;font-size:11px;font-family:ui-monospace,Menlo,Consolas,monospace;letter-spacing:.04em}
+      .l{stroke:#94a3b8;stroke-width:1.5;fill:none}
+      .n{fill:#cbd5e1;font-size:11px}
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="570" rx="12"/>
+
+  <!-- Browser -->
+  <text class="g" x="40" y="42">BROWSER</text>
+  <rect class="group" x="30" y="52" width="250" height="330" rx="10"/>
+  <rect class="box acc" x="48" y="72" width="214" height="86" rx="8"/>
+  <text class="h" x="62" y="96">React 19 + TypeScript</text>
+  <text class="t" x="62" y="116">Landing, Profile, Dashboard,</text>
+  <text class="t" x="62" y="132">Analytics, History</text>
+  <text class="t" x="62" y="148">Tailwind CSS, Recharts</text>
+  <rect class="box acc" x="48" y="176" width="214" height="62" rx="8"/>
+  <text class="h" x="62" y="200">Axios API layer</text>
+  <text class="t" x="62" y="220">typed responses, ApiError</text>
+  <rect class="box" x="48" y="256" width="214" height="62" rx="8"/>
+  <text class="h" x="62" y="280">localStorage</text>
+  <text class="t" x="62" y="300">saved profile + last run id</text>
+  <text class="n" x="48" y="344">Dev: Vite proxies /api to :8000.</text>
+  <text class="n" x="48" y="364">No GitHub token or GitHub calls</text>
+  <text class="n" x="48" y="380">ever reach the browser.</text>
+
+  <!-- Proxy label -->
+  <path class="l" d="M280 207 H340" marker-end="url(#arrow)"/>
+  <text class="n" x="293" y="196">/api</text>
+  <text class="n" x="291" y="226">JSON</text>
+
+  <!-- Backend -->
+  <text class="g" x="352" y="42">BACKEND  (FastAPI, Python)</text>
+  <rect class="group" x="342" y="52" width="352" height="488" rx="10"/>
+  <rect class="box acc2" x="360" y="72" width="316" height="74" rx="8"/>
+  <text class="h" x="374" y="96">API routes + validation (Pydantic)</text>
+  <text class="t" x="374" y="116">/profile  /recommendations  /history</text>
+  <text class="t" x="374" y="132">/analytics  /issues/search  /health</text>
+  <rect class="box acc2" x="360" y="164" width="316" height="90" rx="8"/>
+  <text class="h" x="374" y="188">Services</text>
+  <text class="t" x="374" y="208">search planner, recommendation workflow,</text>
+  <text class="t" x="374" y="224">GitHub client (retries, rate limits, TTL cache),</text>
+  <text class="t" x="374" y="240">analytics aggregation</text>
+  <rect class="box acc" x="360" y="272" width="316" height="134" rx="8"/>
+  <text class="h" x="374" y="296">ML engine  (no web or DB imports)</text>
+  <text class="t" x="374" y="316">profile / issue text  →  batched embeddings</text>
+  <text class="t" x="374" y="332">cosine similarity  →  5 scores, weighted</text>
+  <text class="t" x="374" y="348">ranking  →  explanations from matched features</text>
+  <text class="t" x="374" y="374">45% semantic · 20% skill · 15% experience</text>
+  <text class="t" x="374" y="390">10% activity · 10% beginner friendliness</text>
+  <rect class="box" x="360" y="424" width="316" height="96" rx="8"/>
+  <text class="h" x="374" y="448">SQLAlchemy: SQLite / PostgreSQL</text>
+  <text class="t" x="374" y="468">profiles, cached_issues,</text>
+  <text class="t" x="374" y="484">recommendation_runs, recommendation_items</text>
+  <text class="t" x="374" y="504">SQLite locally, Neon PostgreSQL in the cloud</text>
+
+  <!-- connectors inside backend -->
+  <path class="l" d="M518 146 V164" marker-end="url(#arrow)"/>
+  <path class="l" d="M518 254 V272" marker-end="url(#arrow)"/>
+  <path class="l" d="M518 406 V424" marker-end="url(#arrow)"/>
+
+  <!-- External: GitHub -->
+  <text class="g" x="726" y="42">EXTERNAL</text>
+  <rect class="ext" x="726" y="72" width="214" height="86" rx="8"/>
+  <text class="h" x="740" y="96">GitHub REST API</text>
+  <text class="t" x="740" y="116">open issues, no pull requests</text>
+  <text class="t" x="740" y="132">repo details, once per repo</text>
+  <path class="l" d="M676 205 H704 V115 H726" marker-end="url(#arrow)"/>
+
+  <!-- External: model -->
+  <rect class="ext acc" x="726" y="290" width="214" height="98" rx="8"/>
+  <text class="h" x="740" y="314">Embedding model</text>
+  <text class="t" x="740" y="334">all-MiniLM-L6-v2 (pretrained,</text>
+  <text class="t" x="740" y="350">not trained here), runs locally;</text>
+  <text class="t" x="740" y="366">downloaded once, then offline</text>
+  <path class="l" d="M676 330 H726" marker-end="url(#arrow)"/>
+  <text class="n" x="730" y="412">No paid or hosted AI APIs.</text>
+
+  <!-- Legend -->
+  <text class="n" x="726" y="470">Data flow: browser → backend →</text>
+  <text class="n" x="726" y="486">GitHub, model, database; results</text>
+  <text class="n" x="726" y="502">return the same path.</text>
+</svg>

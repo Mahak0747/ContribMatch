@@ -1,0 +1,241 @@
+query_id,issue_id,relevance,rationale,issue_url,title
+q01,6540398698,1,Python project; Docker is a learning interest; no Flask/web work,https://github.com/rohithprem18/triage/issues/5,Add a Dockerfile for self-hosting
+q01,5966904410,2,Flask example for a Python lib; good first issue; direct Flask match,https://github.com/Zwony/ecotrace/issues/213,feat(examples): add Flask application and blueprint emissions tracking example
+q01,5935452585,1,"Flask repo history used as benchmark cases; Flask-adjacent, not Flask coding",https://github.com/Sym-jay/Blot/issues/6,"Add more Flask bench cases, including quiet ones"
+q01,6540318144,0,README section for a docker-compose project; no Python/Flask skill used,https://github.com/rohithprem18/eddy/issues/3,README: add a Limitations section
+q01,6539992051,0,German bank-card connector request; unrelated,https://github.com/GiroCrab/GiroCrab/issues/1616,"[Bank] Anbindung ADAC Kreditkarte (Solaris SE) – Web-Portal-Konnektor oder PSD2, sobald verfügbar"
+q01,6540071922,0,Scoop package manifest submission; unrelated,https://github.com/matthewjaybarr-png/omarchy-overlay/issues/17,Submit the Scoop manifest to the Extras bucket
+q01,6220072269,1,Write a Flask (or other) tech guideline; Flask knowledge but documentation task,https://github.com/mario12358/telesma/issues/4,"Add a technology guideline: Laravel, Flask, Astro, Nuxt or Phoenix"
+q01,6540472746,0,No description; nothing links it to profile,https://github.com/Psilopa/itersheets/issues/21,"Add a force save option after every data insert (header, data rows)"
+q01,6540318356,1,"Web console UI skeleton; web domain but front-end, not Python",https://github.com/rohithprem18/eddy/issues/4,Console: loading skeletons instead of empty panels
+q01,6131742661,1,Framework integrations incl. Flask; broad roadmap item,https://github.com/freddychoudja/kliz-/issues/36,"Roadmap: framework integrations (`kliz-django`, Wagtail, Flask, FastAPI, MkDocs)"
+q01,6420913651,1,"Flask-Migrate task, domain match, but labelled hard for a beginner",https://github.com/niat-web/QuizMaster/issues/45,Add database migrations with Flask-Migrate
+q01,6176013631,1,Static analysis of Flask routes; Flask-related but advanced parsing work,https://github.com/apoorv1997/aftershock/issues/4,"Routes lens: Starlette route lists, Flask blueprint prefixes, Django URL patterns"
+q02,6540550644,0,ASCII sprite/brand design for a CLI; not web dev,https://github.com/Manimaran-tech/bridge/issues/6,Redesign the CLI header sprite: square app icon or a Bridge mascot
+q02,6375723083,1,CSS formatter bug in Prettier; CSS topic but advanced tooling internals for a beginner,https://github.com/prettier/prettier/issues/20513,[css] space seperated <url-modifier> within url() gets collapsed.
+q02,6540226087,0,Go transaction tests; unrelated,https://github.com/sparklyi/SOJ/issues/200,feat: Cover begin and commit failure behavior in the transaction helper
+q02,6402793125,2,CSS custom properties / light theme bug; good first issue,https://github.com/girishlade111/ReadmePDF/issues/33,[Design System][CSS]: [data-theme='light'] CSS variables completely missing in tokens.css
+q02,5741345621,1,CSS audit plus CI check; CSS but infra-flavoured and not beginner-scoped,https://github.com/duanganucha/daisydays-web/issues/34,infra: ตรวจ CSS ที่ไม่ได้ใช้และสีที่ฮาร์ดโค้ด
+q02,6503157752,2,Remove unused CSS classes; good first issue,https://github.com/jonnypan2325/VroomMates/issues/27,Remove unused CSS classes
+q02,6540499575,0,Go CLI cache bug; unrelated,https://github.com/version-fox/vfox/issues/816,"[BUG]: the Available cache ignores the environment, so one setting's list is shown for another"
+q02,5879557785,2,"CSS media query for high contrast; good first issue, web",https://github.com/imtiyazakiwat/ios27-ui-skill/issues/7,tokens.css: add a high-contrast profile
+q02,6540321044,1,JS/React UI i18n setup; web but labelled hard,https://github.com/rohithprem18/OrganoTale/issues/3,Translate the interface into Hindi and Tamil
+q02,6540527326,0,Docker base image CVEs; not front-end,https://github.com/Manimaran-tech/bridge/issues/5,Reduce CVEs in the Docker image (node:24-alpine base)
+q02,6540398881,2,HTML meta tags; labelled easy/beginner-friendly,https://github.com/rohithprem18/OrganoTale/issues/4,Add Open Graph and Twitter meta tags for link previews
+q02,6074829524,1,"CSS refactor of a 4,300-line stylesheet; relevant but large for a beginner",https://github.com/iice257/PasteVault/issues/15,Consolidate repeated overrides in styles.css
+q03,6049986827,2,"Sparse-embedding retrieval in Python replacing PyTorch dependency; ML domain, mid level",https://github.com/TheJustas228/pgchroma/issues/8,Local SPLADE via fastembed (no PyTorch)
+q03,4397678737,1,ML model training logging; right domain but vague and easy; no stack named,https://github.com/sanjaygokul-ikify/ai-logmon/issues/1,Implement logging for machine learning model training
+q03,5600515620,2,Implement early-exit in PyTorch transformers; core PyTorch/ML work,https://github.com/DhanushNehru/tachyroute/issues/6,Implement PyTorch dynamic early-exit thresholding
+q03,6529454958,1,Python dependency checker; PyTorch index only incidental,https://github.com/wheelgap/tracker/issues/219,"Repo checker: a requirements.txt with PyTorch's --extra-index-url ends in ""No packages were checked"""
+q03,2160693009,1,Add ML examples; domain match but vague description,https://github.com/yogeshhk/TheNatureOfCode/issues/2,Add Machine Learning examples
+q03,5973832779,2,Support PyTorch sharded checkpoints in a model-inspection CLI,https://github.com/pipe1os/modelinfo-cli/issues/57,[Feature]: Support sharded PyTorch checkpoints (pytorch_model.bin.index.json)
+q03,6139938657,2,Detect dataset-statistic leakage in PyTorch transforms,https://github.com/eyadstein/leaklens/issues/141,Detect normalization with full-dataset mean/std in PyTorch transforms
+q03,6540529643,0,Java Gatling/Maven bump; unrelated,https://github.com/dmitriy-iliyov/spring-transactional-outbox/issues/25,Transactional Outbox - [Chore]: Bump Gatling to 3.16.1
+q03,6418425109,2,Gradient-descent ML teaching component (Manim/Python),https://github.com/Manimater/manimater-components/issues/21,Request: gradient_descent (machine learning)
+q03,6540529923,0,Java/Kafka tracing; unrelated,https://github.com/dmitriy-iliyov/spring-transactional-outbox/issues/26,Transactional Outbox - [Feature]: Link consumer spans to the trace of the request
+q03,5041488455,1,Generic 'integrate ML models' request; vague,https://github.com/sanjaygokul-ikify/trend-distributed-agent-orchestrator/issues/3,Integrate with Machine Learning Models
+q03,6459309206,1,PyTorch ROCm install script; PyTorch-related but shell/devops work,https://github.com/guaardvark/guaardvark/issues/419,"Install ROCm 7.2 PyTorch on bare-metal AMD, matching the image"
+q04,6453036845,1,"WASM size CI report (learning interest) but infra tooling, language not shown",https://github.com/OpenLedger-Foundation/Kora-Contract/issues/1190,Performance: wasm size trend report comment on PRs
+q04,6515546814,1,Linux desktop testing of an app; Linux but not clearly systems code,https://github.com/aristotelesbr/spinel-studio/issues/36,Try the app on a Linux desktop
+q04,6300226616,0,Benchmark measurement on own hardware; no coding,https://github.com/latch-remote/latch/issues/73,Add your machine to the performance page
+q04,6540332728,1,"D3D12 console graphics runtime; low-level but graphics, language unknown",https://github.com/californiaAlmonds/OpenScarlett/issues/23,[Help Wanted] Implement console-way D3D12 sampler feedback map readback/clear and query accumulator resolve path in d3d12_xs
+q04,6540331908,1,GPU opcode verification; low-level but hardware/testing task,https://github.com/californiaAlmonds/OpenScarlett/issues/20,[Help Wanted] Expand real-GPU hardware verification of RDNA2/GFX10.3 opcodes (37/779 -> 250+/779) and external dxc/spirv-val corpus depth
+q04,5722607541,1,"Game-engine performance roadmap; systems-ish, language unknown",https://github.com/Mudcrab-Team/mudcrab/issues/183,"Tracking: measurable, moddable performance foundations"
+q04,6086308202,0,TypeScript Dota stats feature; unrelated,https://github.com/PavluntiyJ/ancient-lens/issues/8,Own performance score per match
+q04,6540332122,1,"SPIR-V shader compiler emission; low-level compiler work, language unknown",https://github.com/californiaAlmonds/OpenScarlett/issues/21,[Good First Issue] Implement Amplification/Task (AS) stage SPIR-V emission (SPV_EXT_mesh_shader TaskEXT — currently 0/130)
+q04,5762699179,1,Network performance regression; systems-level but language unknown,https://github.com/tunnetio/Tunnet/issues/43,Severe network performance regression
+q04,6540332464,2,Thread-safe handle registry in a runtime shim; systems programming,https://github.com/californiaAlmonds/OpenScarlett/issues/22,[Good First Issue] Implement XSystemHandleTrack and XSystemIsHandleValid handle registry in xgameruntime
+q04,5861406805,0,Python CLI benchmarks; unrelated stack,https://github.com/pyfaro/pyfaro/issues/48,[core] Establish baseline performance benchmarks
+q04,6515548920,2,Wayland/PipeWire screen capture; advanced Linux systems integration,https://github.com/aristotelesbr/spinel-studio/issues/39,Record the screen on Wayland
+q05,6528549367,2,React + Vite example app; good first issue,https://github.com/Grids-and-Guides/razorpay-js/issues/41,Example: React + Vite
+q05,6272373196,0,Data-entry task finding a repo URL; no React work,https://github.com/rohanmalhotracodes/GSoC-Organizations/issues/307,[Repository needed] React Native Elements
+q05,6401314086,2,React performance improvements in a TypeScript app,https://github.com/kubestellar/console/issues/25014,[Auto-QA] React efficiency improvements available
+q05,6286431140,1,Tests for a React scaffold generator; TS but not React UI work,https://github.com/flisk-sh/flisk/issues/3429,test(cli): scaffold test for the react frontend provider (frontend-frameworks/react.ts)
+q05,6500311386,2,React hooks lint rules adoption; core React/JS tooling,https://github.com/Ale-Newport/swapIT/issues/31,Adopt the React Compiler lint rules from eslint-plugin-react-hooks 7
+q05,6540321818,2,Dark mode with CSS palette in an app; CSS + UI,https://github.com/rohithprem18/tack/issues/4,Dark mode
+q05,6540322351,2,Real tests for a TS booking hook/service,https://github.com/rohithprem18/EventX/issues/3,Replace the placeholder test with real tests for seat locking
+q05,6528550223,2,React Router v7 example with loaders/actions,https://github.com/Grids-and-Guides/razorpay-js/issues/42,"Example: React Router (framework mode, formerly Remix)"
+q05,6540321543,1,React UI + Prisma schema feature but labelled hard,https://github.com/rohithprem18/tack/issues/3,Card labels
+q05,6539946934,0,Python pandas recipe bug; unrelated,https://github.com/cubrid-lab/cubrid-cookbook-python/issues/619,bug: refuse silent overwrites of an existing pandas CSV export
+q05,6512314646,0,Python pandas docs; unrelated,https://github.com/cubrid-lab/cubrid-cookbook-python/issues/588,docs: warn that pandas recipes recreate demonstration tables
+q05,6540323139,2,Set up Vitest and tests for a TS/React app,https://github.com/rohithprem18/dockyard/issues/3,Add unit tests with Vitest
+q06,6324114438,2,Android SDK/JDK/Gradle troubleshooting docs; good first issue,https://github.com/andy1924/bravia-tv-launcher/issues/1,Document common Android SDK and Gradle setup errors
+q06,6362736443,0,Python/Django catalog entry; unrelated,https://github.com/mohamedmoatazsec/mintmap/issues/8,Catalog: describe django-auth-ldap
+q06,6540529132,1,"Java Spring endpoint; Java but backend, not mobile",https://github.com/dmitriy-iliyov/spring-transactional-outbox/issues/23,Transactional Outbox - [Feature]: Read one notification by its id
+q06,6540529372,1,Java Spring actuator info; Java but backend,https://github.com/dmitriy-iliyov/spring-transactional-outbox/issues/24,Transactional Outbox - [Feature]: Build and git info on /actuator/info in both services
+q06,5955481472,2,Validate a Java Android app on real devices; good first issue,https://github.com/Gautam-aman/ResQNet/issues/56,[Testing] Help validate ResQNet on real Android devices
+q06,5827377063,1,Android UWB research; right platform but open-ended hardware research,https://github.com/parawanderer/OpenTagViewer/issues/253,Research: UWB Precision Finding on Android
+q06,5939562845,2,Android Java bug in discovery bookkeeping; good first issue,https://github.com/Gautam-aman/ResQNet/issues/4,Android: diagnostics always reports zero discovered endpoints
+q06,6324115366,1,"Android TV compatibility table; docs, little coding",https://github.com/andy1924/bravia-tv-launcher/issues/3,Add an Android TV device compatibility table
+q06,6415371583,0,Python/Django docs; unrelated,https://github.com/wemake-services/imgproxykit/issues/166,Add `django-ninja` integration examples and documentation
+q06,124973675,2,Migrate to Android camera2 API; Android Java,https://github.com/ExCiteS/Sapelli/issues/45,Use new Android Camera API
+q06,6540529923,1,"Java Spring tracing; Java only, medium difficulty",https://github.com/dmitriy-iliyov/spring-transactional-outbox/issues/26,Transactional Outbox - [Feature]: Link consumer spans to the trace of the request
+q06,6540529643,1,"Java Maven dependency bump; Java only, easy",https://github.com/dmitriy-iliyov/spring-transactional-outbox/issues/25,Transactional Outbox - [Chore]: Bump Gatling to 3.16.1
+q07,5963701828,1,Kubernetes manifests/Helm but explicitly deferred until someone asks,https://github.com/Altiward/altiward/issues/41,Kubernetes manifests or a Helm chart
+q07,6020431774,1,K8s HA replicas; strong topic match but labelled hard,https://github.com/yeixio/matinee/issues/9,Run several replicas on Kubernetes (HA)
+q07,5609409826,2,Kubernetes-native deployment feature; core K8s work,https://github.com/yeixio/toskar-core/issues/26,Feature: Kubernetes-native model deployment
+q07,5741345621,0,CSS audit in Thai; unrelated,https://github.com/duanganucha/daisydays-web/issues/34,infra: ตรวจ CSS ที่ไม่ได้ใช้และสีที่ฮาร์ดโค้ด
+q07,6071968006,1,Go tool benchmark on a CI runner; Kubernetes repo is only test data,https://github.com/Git-Hospital/githealthcheck/issues/24,Measure a scan of kubernetes/kubernetes on a GitHub runner
+q07,5568266741,2,Kubernetes manifests for a Go service; main deliverable,https://github.com/gopkgreg/gopkgreg/issues/14,Kubernetes manifests in deploy/
+q07,6217664001,2,Run servers inside Docker containers; Docker is the deliverable,https://github.com/raven-clown/airlock/issues/44,Run stdio servers in Docker containers
+q07,5724467893,2,Support Podman/Rancher alongside Docker; container tooling,https://github.com/naira-project/naira/issues/234,Fix: Local Docker Alternatives
+q07,6031764906,2,Docker Compose service support in a CI tool,https://github.com/Zerxen-dev/OnboardCI/issues/3,Add Docker Compose service support
+q07,6498153037,1,Kubernetes/Helm docs example; right topic but trivial for this level,https://github.com/soroworks/soroforge/issues/447,"docs: add an example to ""Kubernetes & Helm"" in ./README.md"
+q07,6447787521,2,Testing docker/kubectl container hosts; devops testing,https://github.com/conn3xorg/conn3x/issues/972,Testers wanted: containers as hosts with docker and kubectl
+q07,6074829524,0,CSS refactor; unrelated,https://github.com/iice257/PasteVault/issues/15,Consolidate repeated overrides in styles.css
+q08,6540226087,0,Go transaction tests; unrelated,https://github.com/sparklyi/SOJ/issues/200,feat: Cover begin and commit failure behavior in the transaction helper
+q08,6474897842,1,Python dataset download pipeline for ML project; no pandas/SQL,https://github.com/MahdiMashayekhi-AI/Safesite-Vision/issues/13,feat(data): implement scripts/download_data.py with checksum verification
+q08,6540234689,1,Python config/data source for an industrial logger; not data science,https://github.com/DanShinde/tagscope/issues/2,Modbus TCP data source
+q08,6539946934,2,Pandas CSV export bug; size S,https://github.com/cubrid-lab/cubrid-cookbook-python/issues/619,bug: refuse silent overwrites of an existing pandas CSV export
+q08,6532162136,2,Pandas binning bug; good first issue,https://github.com/mloda-ai/mloda-registry/issues/1596,Binning: pandas accepts a complex source and drops the imaginary part
+q08,6024055088,1,Pandas in-place taint analysis but labelled hard,https://github.com/eyadstein/leaklens/issues/61,"Taint through loops, comprehensions, augmented assignment and in-place pandas edits"
+q08,6540472746,0,No description; nothing links it to profile,https://github.com/Psilopa/itersheets/issues/21,"Add a force save option after every data insert (header, data rows)"
+q08,6531106486,2,Export features as pandas DataFrame; good first issue,https://github.com/midhunsomu/Feature_Store/issues/15,feat: export features as Pandas / Polars DataFrame in API
+q08,6487732669,1,Python data-validation test; light data angle,https://github.com/shanthoshkv/the-indian-trader/issues/2,Add a data-integrity test for data/symbols.json
+q08,6512314646,2,Docs for pandas + SQL recipes; good first issue,https://github.com/cubrid-lab/cubrid-cookbook-python/issues/588,docs: warn that pandas recipes recreate demonstration tables
+q08,6540499575,0,Go CLI cache bug; unrelated,https://github.com/version-fox/vfox/issues/816,"[BUG]: the Available cache ignores the environment, so one setting's list is shown for another"
+q08,6512069930,2,Pandas CSV export failure handling with SQL cleanup,https://github.com/cubrid-lab/cubrid-cookbook-python/issues/580,bug: preserve CSV export failures when pandas recipe cleanup fails
+q09,5898510589,2,"Django task-metadata feature; design-first, advanced",https://github.com/oxpull/django-ox/issues/141,Add provisional task metadata support following Django #37400
+q09,6362736443,1,Catalog entry for django-auth-ldap in a Python tool; Django-adjacent,https://github.com/mohamedmoatazsec/mintmap/issues/8,Catalog: describe django-auth-ldap
+q09,6415371583,1,Django Ninja docs/examples but good-first-issue is easy for advanced level,https://github.com/wemake-services/imgproxykit/issues/166,Add `django-ninja` integration examples and documentation
+q09,6279945550,2,Django model instance with docxtpl; Django + Python,https://github.com/cvas22/docform/issues/43,Can i pass instance model django to docxtpl
+q09,6534468339,0,macOS cleaner tool testing; unrelated,https://github.com/ajithrnayak/xpunge/issues/1,Real-world `clean` runs on a range of Macs
+q09,6131742661,2,Django integration package for a framework-agnostic lib,https://github.com/freddychoudja/kliz-/issues/36,"Roadmap: framework integrations (`kliz-django`, Wagtail, Flask, FastAPI, MkDocs)"
+q09,6188222428,2,SQLite-to-PostgreSQL copy command,https://github.com/EldritchInc/azathoth/issues/133,Copy an SQLite database into PostgreSQL
+q09,6535412994,0,iOS app registration verification; unrelated,https://github.com/albertolicea00/casero.cu-ios/issues/2,Verify guest registration end-to-end against the live portal
+q09,5775000793,2,"PostgreSQL storage adapter, advanced concurrency",https://github.com/jkcary/ano-standard/issues/6,[Community] PostgreSQL adapter
+q09,6325148718,2,Django/FastAPI security pack,https://github.com/RiskVoid/Security-Agent-Kit/issues/12,Django and FastAPI pack (following the Laravel pattern)
+q09,6403602742,2,PostgreSQL source support via SQLAlchemy,https://github.com/tagben/forgemesh/issues/4,Support PostgreSQL as a source database
+q09,6528852329,2,PostgreSQL failure-recovery tests for a Python runtime,https://github.com/kiankahinpour/agentflow-runtime/issues/7,test: Validate PostgreSQL failure recovery and worker crash handling
+q10,6537452653,1,Game-server compatibility check against original client; C#-ish but mostly manual testing,https://github.com/chris4aker/OfflineDAoC-LivingServer/issues/425,"1.2.1 PC check: the original client's handshake build, and the bot death fall"
+q10,6205620999,2,Unity-side entity proxy system; Unity C#,https://github.com/Megacity-East/MCELoader/issues/40,Unity-Side EntityView proxy system
+q10,6261075036,0,Healthcare NLP fixtures; unrelated,https://github.com/maziyarpanahi/openmed/issues/4981,Add synthetic Spark NLP annotation conformance fixtures
+q10,5804886999,1,Unity version/platform testing; Unity but not coding,https://github.com/barmoshe/playmark/issues/4,Unity: platforms and setups not tested yet
+q10,6537452325,1,Game server bug in C# pathing data; needs owner data first,https://github.com/chris4aker/OfflineDAoC-LivingServer/issues/421,Lough Derg / Bri Leith seam loops at region 200
+q10,6490243687,1,Manual playtest of a Unity game; game dev but no C# work,https://github.com/Ale-Newport/AfterFall/issues/1,Playtest the full loop by hand and report pacing and confusion points
+q10,6490244114,2,Build and test the Unity Windows player,https://github.com/Ale-Newport/AfterFall/issues/2,Build and test the Windows player
+q10,6537452495,2,Game server bot-party logic; game dev C#,https://github.com/chris4aker/OfflineDAoC-LivingServer/issues/423,Bot parties never take a new member once they set off
+q10,6539318597,1,Avalonia UI control styling; C# UI but not game,https://github.com/ccswe-avalonia/CCSWE.Avalonia.Material/issues/69,ToggleSwitch: M3 pressed thumb (28dp) and state layer
+q10,6135197038,1,Unity package Windows verification; Unity tooling,https://github.com/dark-swordsman/com.darkswordsman.agent-bridge/issues/1,Windows support: confirm and fix
+q10,6261013385,0,Healthcare NLP table; unrelated,https://github.com/maziyarpanahi/openmed/issues/4940,Ship a Spark NLP stage-class compatibility table
+q10,6436206915,1,"Unity editor compatibility validation on macOS/Linux; blocked, needs hardware",https://github.com/i1rr/unity-MCP/issues/6,Establish a macOS or Linux compatibility result
+q11,6125839851,2,"README install instructions; documentation, good first issue",https://github.com/brookewilkinson173-droid/Media_Library_Project/issues/7,Documentation
+q11,6394883018,2,Improve project documentation; good first issue,https://github.com/miikkuu/Instagram-Non-Followers-Remover/issues/1,Improve documentation.
+q11,6354027366,1,Full documentation site: right domain but far too large for a beginner,https://github.com/plumlang/plumlang/issues/34,Documentation site
+q11,6213835345,1,"Documentation label but no description, scope unknown",https://github.com/Cal-Poly-Pomona-Formula-SAE-Electric/2026-27/issues/3,Documentation
+q11,6487968785,1,Spell-check CI job; docs-quality tooling but CI configuration,https://github.com/DepRadarOrg/DepRadar/issues/431,[ci] Spell-check with `typos`
+q11,6490157046,2,README description and collaborators list,https://github.com/GoranWidlund/vitamin-ab-repo/issues/3,Update documentation
+q11,6540071922,0,Package manifest submission; unrelated,https://github.com/matthewjaybarr-png/omarchy-overlay/issues/17,Submit the Scoop manifest to the Extras bucket
+q11,6452251511,2,Fix a typo in documentation,https://github.com/alaasek/git-github-club-practice/issues/3,Issue 3 — Fix a typo
+q11,6539992051,0,German bank connector request; unrelated,https://github.com/GiroCrab/GiroCrab/issues/1616,"[Bank] Anbindung ADAC Kreditkarte (Solaris SE) – Web-Portal-Konnektor oder PSD2, sobald verfügbar"
+q11,6440675345,2,Update outdated architecture documentation; good first issue,https://github.com/sdi2200246/smart-terminal/issues/52,Documentation
+q11,6533980296,0,"Search design proposal; technical, not documentation",https://github.com/keremeersoy/pastu/issues/12,Design proposal: fuzzy search (typo tolerance)
+q11,6406418535,1,Grammar fix in an error message; writing but in code,https://github.com/MaxOhn/Bathbot/issues/1144,major typo renders bot unusable
+q12,6520106427,0,Java Spring handler; unrelated,https://github.com/oscarbol09/jvm-mcp/issues/308,[Server] SpringBeansToolHandler get_bean_detail masks NOT_AVAILABLE discovery failures as Bean not found
+q12,6374349220,1,Manual iPhone check of widgets/Live Activity; iOS but no coding,https://github.com/salah-kit/Salah/issues/93,"Check the iOS widgets, Live Activity and Now Playing bar on an iPhone"
+q12,6241802334,2,iOS deployment target vs framework in Xcode project; good first issue,https://github.com/jayhemnani9910/receiptlens-minicpm-v46/issues/2,Match the iOS deployment target to the llama.cpp framework
+q12,5575469597,2,Add iOS/visionOS platforms to a Swift package,https://github.com/drewster99/swift-llm-kit/issues/18,iOS and visionOS support
+q12,6178224810,1,Device compatibility reports for an iOS app; non-code,https://github.com/esasabiyatov-afk/fon/issues/7,Отчёты о совместимости: устройства и версии iOS
+q12,6533980847,1,Measure latency with Instruments in a macOS Swift app,https://github.com/keremeersoy/pastu/issues/14,Measure and publish panel-open latency and idle memory
+q12,6533980602,1,Keychain/Touch ID design proposal in a macOS app,https://github.com/keremeersoy/pastu/issues/13,Design proposal: optional encrypted storage (Touch ID)
+q12,6461722082,2,CI for an iOS SwiftUI app with Xcode builds,https://github.com/yoink-labs/split/issues/13,CI: build and test the iOS app on GitHub Actions
+q12,6534468339,1,Testing an Xcode/simulator cleaning tool on other Macs; non-code,https://github.com/ajithrnayak/xpunge/issues/1,Real-world `clean` runs on a range of Macs
+q12,6535412994,2,End-to-end verification of an iOS app feature,https://github.com/albertolicea00/casero.cu-ios/issues/2,Verify guest registration end-to-end against the live portal
+q12,5649873688,2,iOS SSH shell bug in a Swift package,https://github.com/manaflow-ai/cmux/issues/16099,iOS SSH: close workspace swallows provider failures
+q12,5355356839,0,Java Spring Batch; unrelated,https://github.com/tenantlayer-io/tenantlayer/issues/2,Spring Batch propagation
+q13,6402784527,2,Independent review of cryptography and consensus code,https://github.com/Milkausikopistor/krevo/issues/3,Independent review of the cryptography and consensus code
+q13,6524677645,1,"HTTP security headers/CSP; security domain but frontend config, easy",https://github.com/riteshbonthalakoti/HELPDESK.AI/issues/4181,security(frontend): configure strict Content-Security-Policy and HTTP security headers in vercel.json
+q13,6495185125,1,Security policy docs table; security-adjacent but trivial for advanced level,https://github.com/TheVicky1/Safai_OS/issues/27,docs(security): add supported versions and reporting SLA table to SECURITY.md
+q13,6508048190,2,Constant-time comparisons and key zeroization hardening,https://github.com/sahalhes/waymesh/issues/25,[Security] Automated Cryptographic Audit & Memory Zeroization Hardening
+q13,6501090167,1,Security detections in a governance toolkit; adjacent to pentest/crypto,https://github.com/enyenezra/ai-governance-toolkit/issues/12,Add evidence-backed provider security detections
+q13,6491093842,1,Security docs about token expiry; trivial for advanced level,https://github.com/TheVicky1/Safai_OS/issues/11,docs(security): document session token expiration and refresh flow in docs/SECURITY.md
+q13,6074829524,0,CSS refactor; unrelated,https://github.com/iice257/PasteVault/issues/15,Consolidate repeated overrides in styles.css
+q13,5965593222,1,"Correct security-scanner claims in docs; security-adjacent, easy",https://github.com/CodNoob100/null-drift/issues/167,[DOCS] Correct outdated security-scanner and performance claims in security policy
+q13,6093476177,2,Cryptographic migration experiment,https://github.com/gstulli/universal_safe_id/issues/18,E18: Cryptographic migration / Migração criptográfica
+q13,5741345621,0,CSS audit in Thai; unrelated,https://github.com/duanganucha/daisydays-web/issues/34,infra: ตรวจ CSS ที่ไม่ได้ใช้และสีที่ฮาร์ดโค้ด
+q13,6489116062,2,Independent security review of a spec and threat model,https://github.com/pcp-protocol/pcp/issues/60,Independent security review of SPEC §9 and SECURITY.md
+q13,6508044774,2,Ed25519 signed vouching; applied cryptography,https://github.com/sahalhes/waymesh/issues/14,[Safety] Cryptographically Signed Ed25519 Peer Vouching & Community Trust Web
+q14,6536471086,0,Game rendering fix; unrelated,https://github.com/privacymatters42069-del/PokiNative/issues/26,*high priority bug* ALL VERSIONS/LAUNCHERS possible render fix
+q14,328483274,2,Set up a Rails app with rspec and factories,https://github.com/jesperhodge/fabricator/issues/1,Setup Rails app
+q14,6515010066,0,Release script tests; no Ruby/Rails evidence in the text,https://github.com/aristotelesbr/spinel-studio/issues/29,Tests for script/release and script/release_notes
+q14,3458607527,2,Rails view path conventions,https://github.com/rubymonolith/supermail/issues/3,Rails view paths
+q14,398673457,2,Add Rails integration to a Sinatra-based gem; good first issue,https://github.com/symbiod/localizator/issues/8,Integration with  Rails
+q14,1112531535,2,Rails 7 upgrade; description minimal,https://github.com/ueckoken/KokenWiki/issues/187,rails v7
+q14,1559754018,2,Rails instrumentation via ActiveSupport::Notifications,https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/298,Explore additional Rails instrumentation
+q14,437215467,2,Rails 6 compatibility fix for a gem,https://github.com/visualitypl/textris/issues/50,Rails 6 compatibility
+q14,6515548920,0,Wayland screen capture; no Ruby evidence,https://github.com/aristotelesbr/spinel-studio/issues/39,Record the screen on Wayland
+q14,6515546814,0,Linux desktop testing; no Ruby evidence,https://github.com/aristotelesbr/spinel-studio/issues/36,Try the app on a Linux desktop
+q14,6535644393,0,PHP extension bug report; unrelated,https://github.com/NewEraCracker/suhosin/issues/4,ATTENTION !!! dev is messed up !!!
+q14,6515009538,0,ffmpeg path check in a desktop app; no Ruby evidence,https://github.com/aristotelesbr/spinel-studio/issues/28,Say so when ffmpeg is not found
+q15,6226170006,1,"CLI argument bug, good first issue; language not shown",https://github.com/octacity-org/codebase-memory-mcp/issues/134,cli <tool> array flags do not accept a JSON array literal
+q15,6500311386,0,React lint rules; unrelated,https://github.com/Ale-Newport/swapIT/issues/31,Adopt the React Compiler lint rules from eslint-plugin-react-hooks 7
+q15,6535644393,0,PHP extension bug report; unrelated,https://github.com/NewEraCracker/suhosin/issues/4,ATTENTION !!! dev is messed up !!!
+q15,6044703274,2,Port a portable C CLI/engine to Linux; good first issue,https://github.com/bkrdmrcioglu/Kite/issues/4,Linux build support for the CLI/engine
+q15,6528549367,0,React example; unrelated,https://github.com/Grids-and-Guides/razorpay-js/issues/41,Example: React + Vite
+q15,3901938485,1,"CLI tests for a Python CLI tool; CLI topic, not C",https://github.com/trezor/trezor-firmware/issues/6430,Add basic CLI tests for `trezorctl`
+q15,744011381,1,CLI output layout in Linux packaging tool; CLI/Linux but not beginner-scoped,https://github.com/flatpak/flatpak/issues/3968,"CLI: permissions lists are messy, unclear"
+q15,6536471086,0,Game rendering fix; unrelated,https://github.com/privacymatters42069-del/PokiNative/issues/26,*high priority bug* ALL VERSIONS/LAUNCHERS possible render fix
+q15,6202979391,2,hexdump command in a C embedded CLI; good first issue,https://github.com/Yigitcakirdogan/stm32-dma-ringbuffer-uart-cli/issues/4,feat(cli): Add 'hexdump <addr> <len>' memory inspection command to built-in diagnostics
+q15,6202979189,2,Command history buffer in a C CLI without malloc; good first issue,https://github.com/Yigitcakirdogan/stm32-dma-ringbuffer-uart-cli/issues/3,feat(cli): Add ANSI VT100 Up/Down arrow command history buffer
+q15,6535489603,0,Game rendering fix; unrelated,https://github.com/privacymatters42069-del/PokiNative/issues/24,*high priority bug* ALL VERSIONS X.X.X rendering issues
+q15,6533262581,1,C code comment clarification; C file but not CLI/tooling,https://github.com/silver-sat/silversat-fsw/issues/84,"Explain ""kept out of line"" in health's log_status() comment"
+q16,6241377997,2,Laravel queue behaviour in a PHP package; good first issue,https://github.com/skybleak333/hindsight-php/issues/1,"Retain tool: store through the queue, like Memory::queue()"
+q16,6241378426,2,New php artisan command; Laravel,https://github.com/skybleak333/hindsight-php/issues/2,Add hindsight:recall to see what an agent will recall
+q16,6539937784,0,Repo branch housekeeping question; unrelated,https://github.com/version-fox/vfox-erlang/issues/26,Can the branches other than main be deleted?
+q16,6122874221,1,Regenerate translation template for a Laravel app; mostly running a script,https://github.com/arc-panel-oss/arcpanel/issues/3,Regenerate arcpanel.pot with the strings of the Laravel app
+q16,5513518518,2,Laravel adapter starter; good first issue,https://github.com/bruce-afruz/arpp-integrations/issues/4,Adapter: Laravel
+q16,6534233782,1,"Maintainer wanted for a PHP project; vague, no concrete task",https://github.com/mrosenthal9127-glitch/EasySSLSetup-Engine/issues/1,SEEKING DEVELOPERS TO CONTINUE EASYSSLSETUP
+q16,6527345761,1,PHP source integration in an inventory plugin; PHP implied but not web/Laravel,https://github.com/parime/glpi-finops/issues/11,Source Sangfor HCI (contribution attendue)
+q16,6520083636,0,Network-flow import in a plugin; no PHP/Laravel evidence in the text,https://github.com/parime/glpi-iso27001-management/issues/833,"Matrice des flux : import Ubiquiti UniFi (UDM, Cloud Gateways) - contribution attendue"
+q16,600890180,2,Laravel 7 support for a package; good first issue,https://github.com/shweshi/Laravel-Unsplash-Wrapper/issues/12,Laravel 7 support
+q16,2291075362,2,Laravel 11 support for a package; good first issue,https://github.com/joelbutcher/jetstream-team-transfer/issues/16,Laravel 11 Support
+q16,6540499575,0,Go CLI cache bug; unrelated,https://github.com/version-fox/vfox/issues/816,"[BUG]: the Available cache ignores the environment, so one setting's list is shown for another"
+q16,6527345941,1,PHP source class (H3cSource.php) in an inventory plugin; PHP but not web/Laravel,https://github.com/parime/glpi-finops/issues/12,Source H3C CAS / UIS (contribution attendue)
+q17,6424271405,1,"Verify Copilot CLI profiles; developer tooling but testing against a real CLI, language unknown",https://github.com/wimo-dev/turno/issues/7,Verify Copilot CLI profiles against the real CLI
+q17,6470303617,2,TypeScript CLI client reconciliation bug,https://github.com/Invoice-Liquidity-Network/Invoice-Liquidity-Network/issues/1493,Add CLI transaction confirmation reconciliation
+q17,6408655974,1,Hooks for agent CLIs; developer tools but language not shown,https://github.com/aryan-tah/pgdeadbolt/issues/28,"Hooks for Codex CLI, Gemini CLI and other agents"
+q17,6348688499,1,CLI README doc fix for a TS CLI; trivial for advanced level,https://github.com/halonic-com/halonic/issues/2165,docs(cli): list plugin add and plugin remove in the CLI README
+q17,6470256898,2,GraphQL pagination/complexity invariants in a TS indexer,https://github.com/Invoice-Liquidity-Network/Invoice-Liquidity-Network/issues/1444,Enforce GraphQL pagination and complexity invariants
+q17,6470304545,2,Tests for a TS CLI destructive-action prompt,https://github.com/Invoice-Liquidity-Network/Invoice-Liquidity-Network/issues/1494,Test CLI destructive-action confirmation
+q17,6272357107,0,Data-entry task finding a repo URL; no coding,https://github.com/rohanmalhotracodes/GSoC-Organizations/issues/269,[Repository needed] GraphQL Foundation
+q17,6153390259,2,GraphQL SDL adapter; GraphQL + developer tooling,https://github.com/mpinedaj/mcpforge/issues/1,feat: add GraphQL SDL adapter
+q17,6489477556,2,"GraphQL resolver bug in TypeScript, intermediate",https://github.com/Divinity-Labs/Lens/issues/679,GraphQL `getPriceHistory` reads both networks at once
+q17,5243946962,0,Python sklearn export; unrelated,https://github.com/bijay-odyssey/edaprep/issues/6,Export a fitted Plan as a scikit-learn ColumnTransformer
+q17,6406933356,1,CLI agent integration testers; developer tools but no TS evidence,https://github.com/DiffCI/core/issues/134,Antigravity CLI and Gemini CLI integration: testers and contributors wanted (tracking issue)
+q17,6140375811,0,Python sklearn wrapper; unrelated,https://github.com/eyadstein/leaklens/issues/451,Add a scikit-learn compatible LeakGuard estimator wrapper that raises on leaks
+q18,6261013385,2,Clinical NLP library migration tooling in Python,https://github.com/maziyarpanahi/openmed/issues/4940,Ship a Spark NLP stage-class compatibility table
+q18,940929785,1,Evaluating the language module of CLIP; NLP but vague,https://github.com/shpotes/medclip/issues/7,NLP evaluation
+q18,6462483887,1,"Vision-language pipeline bug; transformers-adjacent, not core NLP",https://github.com/docling-project/docling-pipelines/issues/655,VLM API providers change docling's global preset; Transformers ignores model_id
+q18,5670307220,1,Dependency bumps incl. sentence-transformers; chore,https://github.com/evarness-ai/evarness/issues/58,"Python majors: psutil 7, watchdog 6, sentence-transformers 6"
+q18,6527345941,0,PHP/virtualization source; unrelated,https://github.com/parime/glpi-finops/issues/12,Source H3C CAS / UIS (contribution attendue)
+q18,6271485223,1,Embedding/zero-shot topic detection (NLP) but labelled hard,https://github.com/Abhishekb3666/ThumbStop/issues/14,Better topic detection than keyword lists
+q18,6261011890,2,Local adapter for an NLP pipeline API,https://github.com/maziyarpanahi/openmed/issues/4939,Add a LightPipeline-style local adapter with annotate and fullAnnotate
+q18,6014135071,2,Hierarchy Transformers embedder adapter,https://github.com/dhruvmojila/poincare-memory/issues/2,Hierarchy Transformers adapter
+q18,6534233782,0,PHP SSL project; unrelated,https://github.com/mrosenthal9127-glitch/EasySSLSetup-Engine/issues/1,SEEKING DEVELOPERS TO CONTINUE EASYSSLSETUP
+q18,6322240722,1,"LLM serving backends design review; LLM interest, not NLP modelling",https://github.com/Swizzle-AI/swizzle/issues/2,[Roadmap] Real model backends (vLLM / llama.cpp / transformers): design review and testers wanted
+q18,6261075036,2,NLP annotation conformance fixtures; good first issue,https://github.com/maziyarpanahi/openmed/issues/4981,Add synthetic Spark NLP annotation conformance fixtures
+q18,6024065655,1,NLP leakage detection (tokenizers/TF-IDF) but labelled hard,https://github.com/eyadstein/leaklens/issues/69,"NLP: tokenizer, vocabulary and embeddings trained on the full corpus before the split"
+q19,5809463446,1,"Android version support request; platform match, language unknown",https://github.com/shihabal3amri/DiPlay/issues/665,Android 5.1.1
+q19,6535135881,0,Architecture glossary docs; unrelated,https://github.com/micronizationlab/glafira-ai-hub/issues/389,docs: add a beginner-friendly glossary of GLAFIRA architecture terms
+q19,5677403688,0,VPN platform question; unrelated,https://github.com/Vauth/FoxyVPN/issues/1,"Windows, Linux & android alternatives"
+q19,6534014194,1,Backup acceptance test in an Android-related project; unclear scope,https://github.com/micronizationlab/glafira-ai-hub/issues/387,test(backup): complete provider read-back and clean-device restore acceptance
+q19,6538898257,1,"Android app versionCode in analytics events; Android concept, backend work",https://github.com/elimu-ai/analytics/issues/483,Store the `versionCode` of the app reporting an event
+q19,4921610188,1,Android Auto support; Android but large and not beginner-scoped,https://github.com/PimpinPumpkin/Vela/issues/179,Android Auto Support
+q19,5966904410,0,Python Flask example; unrelated,https://github.com/Zwony/ecotrace/issues/213,feat(examples): add Flask application and blueprint emissions tracking example
+q19,6533916963,0,SARIF reporting; unrelated,https://github.com/dev-vikas-soni/leak-lens/issues/52,Add SARIF Reporting Support
+q19,6420913651,0,Flask migrations; unrelated,https://github.com/niat-web/QuizMaster/issues/45,Add database migrations with Flask-Migrate
+q19,6142480672,2,Android launcher icon; good first issue,https://github.com/AblazedTC/musicDecoded/issues/11,T-701a: Android launcher icon
+q19,6457757944,2,Android Lint in CI; good first issue,https://github.com/coool121212/fwr-android/issues/8,Run Android Lint in GitHub Actions CI
+q19,6385346386,1,"Kotlin/Gradle build clean-up, but explicitly not Android",https://github.com/CodandoTV/popcornguineapig-detekt-rule/issues/47,chore: remove Android leftovers from the build
+q20,5371818080,2,Ansible expertise skill; good first issue,https://github.com/Aarvion-AI/stackwise-skills/issues/33,skill: Ansible
+q20,6018097693,2,Ansible CIS hardening roles,https://github.com/ngpayyappilly/image-factory/issues/16,Restrict CIS remediation to Level 1 (or decide that Level 1 + 2 is intended)
+q20,3020596306,2,Ansible collection compatibility with ansible-core 2.19,https://github.com/netbox-community/ansible_modules/issues/1411,Validate compatibility with ansible-core 2.19
+q20,6539216612,0,Org profile page polish; unrelated,https://github.com/Great-Falls-Tool-Bus/.github/issues/19,Jazz up the org profile
+q20,6534468339,0,macOS tool testing; unrelated,https://github.com/ajithrnayak/xpunge/issues/1,Real-world `clean` runs on a range of Macs
+q20,6535412994,0,iOS app verification; unrelated,https://github.com/albertolicea00/casero.cu-ios/issues/2,Verify guest registration end-to-end against the live portal
+q20,6535271138,2,Run a Kubernetes kind platform end-to-end; K8s learning interest and devops,https://github.com/joezuchora/golden-path-k8s/issues/6,"Run the kind platform end to end on macOS (Apple Silicon, Intel) and Linux arm64"
+q20,6535271329,2,Kubernetes composition spike (KCL vs go-templating),https://github.com/joezuchora/golden-path-k8s/issues/7,Spike: KCL (function-kcl) instead of go-templating for a composition
+q20,6530252617,1,Linux device port; Linux but hardware porting,https://github.com/kylesmile/open-boox/issues/31,Join or start a postmarketOS port
+q20,4087285490,1,"Ansible language-server bug; Ansible-adjacent, vague",https://github.com/oraios/serena/issues/1182,Ansible hover fails on windows
+q20,6180240215,2,CI workflow for an Ansible docs project; devops tooling,https://github.com/ansible/ansible-documentation/issues/4134,Replace GH CLI w/ `peter-evans/create-pull-request` in `reusable-pip-compile` for commit signing
+q20,4281451856,2,Ansible PostgreSQL module bug,https://github.com/ansible-collections/community.postgresql/issues/917,Restore - task continues even after the restoration is complete

@@ -221,3 +221,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ContribMatch
+# secrets and local configuration (the *.example files stay tracked)
+.env.*
+!.env.example
+# local databases
+*.db
+*.db-journal
+backend/data/*.sqlite*
+*.sqlite3
+# model and tooling caches
+.model_cache/
+.pytest_cache/
+# temporary file written by evaluation/collect_candidates.py while it runs
+backend/evaluation/data/.candidates_partial.json
+# frontend build output
+frontend/dist/

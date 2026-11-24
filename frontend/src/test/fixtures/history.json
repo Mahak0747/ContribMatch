@@ -1,0 +1,38 @@
+{
+ "total": 2,
+ "limit": 20,
+ "offset": 0,
+ "items": [
+  {
+   "id": 2,
+   "profile_id": 2,
+   "created_at": "2026-11-21T06:41:39.328518Z",
+   "experience_level": "advanced",
+   "skills": [
+    "React"
+   ],
+   "domains": [
+    "web development"
+   ],
+   "issues_analyzed": 4,
+   "recommendation_count": 2,
+   "top_score": 13.4
+  },
+  {
+   "id": 1,
+   "profile_id": 1,
+   "created_at": "2026-11-21T06:41:39.309153Z",
+   "experience_level": "beginner",
+   "skills": [
+    "Python",
+    "PyTorch"
+   ],
+   "domains": [
+    "machine learning"
+   ],
+   "issues_analyzed": 4,
+   "recommendation_count": 4,
+   "top_score": 88.4
+  }
+ ]
+}
