@@ -10,6 +10,7 @@ from app.core.config import get_settings
 from app.core.exceptions import register_exception_handlers
 from app.core.logging import configure_logging
 from app.db.session import ensure_initialized
+from app.ml import diagnostics as diag
 from app.ml.embedder import get_embedder
 from app.ml.engine import RecommendationEngine
 from app.services.github_client import GitHubClient
@@ -29,15 +30,23 @@ async def lifespan(app: FastAPI):
     logger.info("GitHub client ready (authenticated=%s)", app.state.github.authenticated)
     embedder = get_embedder()
     app.state.engine = RecommendationEngine(embedder)
+    diag.logger.info("startup: %s", diag.describe_runtime())
+    diag.logger.info("startup: preload_model=%s | %s", settings.preload_model,
+                     diag.describe_model_cache(settings.embedding_model, embedder.cache_folder))
     if settings.preload_model:
         try:
             await run_in_threadpool(embedder.preload)
             logger.info("Embedding model preloaded")
         except Exception as exc:  # the API still starts; requests will report 503
             logger.error("Could not preload embedding model: %s", exc)
+    if not settings.preload_model:
+        diag.logger.info("startup complete: the model is NOT loaded yet (it loads on the first recommendation request) | %s",
+                         diag.snapshot())
     try:
         yield
     finally:
+        # A SIGTERM (restart, deploy, failed health check) reaches here; an out-of-memory kill (SIGKILL) does not.
+        diag.logger.info("shutdown: active stages=%s | %s", diag.active_stages() or "none", diag.snapshot())
         await app.state.github.aclose()
 
 

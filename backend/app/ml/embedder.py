@@ -16,6 +16,8 @@ from typing import Protocol
 
 import numpy as np
 
+from app.ml import diagnostics as diag
+
 logger = logging.getLogger(__name__)
 
 
@@ -47,17 +49,30 @@ class SentenceTransformerEmbedder:
     # -- model loading (once) ------------------------------------------------
     def _load(self):
         if self._model is None:
+            if self._lock.locked():
+                logger.info("[req=%s] another request is already loading the model; waiting for it to finish",
+                            diag.request_id.get())
             with self._lock:
                 if self._model is None:
                     logger.info("Loading embedding model %s", self.model_name)
+                    logger.info("%s", diag.describe_model_cache(self.model_name, self.cache_folder))
                     try:
-                        from sentence_transformers import SentenceTransformer  # heavy import, lazy
+                        # The import (PyTorch, transformers) and the load (weights, tokenizer) are timed separately
+                        # because they fail and stall in different ways. Heartbeats log memory while they run.
+                        with diag.stage("model import (sentence_transformers + PyTorch)", heartbeat=3.0):
+                            from sentence_transformers import SentenceTransformer  # heavy import, lazy
+                        logger.info("%s", diag.describe_ml_libraries())
                         kwargs = {"cache_folder": self.cache_folder} if self.cache_folder else {}
-                        self._model = SentenceTransformer(self.model_name, **kwargs)
+                        with diag.stage("model load (weights + tokenizer)", heartbeat=3.0, model=self.model_name):
+                            self._model = SentenceTransformer(self.model_name, **kwargs)
                     except Exception as exc:
+                        # Full traceback (including the underlying cause), not just the exception type.
+                        logger.exception("Embedding model load FAILED for %s (cache_folder=%s); full traceback follows",
+                                         self.model_name, self.cache_folder)
                         raise EmbeddingModelError(
                             f"Could not load embedding model '{self.model_name}': {type(exc).__name__}") from exc
                     self.load_count += 1
+                    logger.info("Embedding model ready: %s | %s", self.model_name, diag.snapshot())
         return self._model
 
     def preload(self) -> None:
@@ -83,10 +98,13 @@ class SentenceTransformerEmbedder:
                 self.cache_hits += 1
         fresh: dict[str, np.ndarray] = {}
         if missing:
-            vecs = self._load().encode(
-                list(missing.values()), batch_size=self.batch_size,
-                normalize_embeddings=True, convert_to_numpy=True, show_progress_bar=False,
-            )
+            model = self._load()
+            with diag.stage("embedding generation", heartbeat=5.0, texts=len(missing),
+                            already_cached=len(keys) - len(missing), batch_size=self.batch_size):
+                vecs = model.encode(
+                    list(missing.values()), batch_size=self.batch_size,
+                    normalize_embeddings=True, convert_to_numpy=True, show_progress_bar=False,
+                )
             for k, v in zip(missing.keys(), np.asarray(vecs, dtype=np.float32)):
                 fresh[k] = v
                 self._cache[k] = v

@@ -161,3 +161,36 @@ Not run against a live PostgreSQL, Render or Vercel: the build command on Render
 | 429 `rate_limited` | GitHub limits reached; make sure `GITHUB_TOKEN` is set on Render |
 | Pages other than `/` give 404 on Vercel | `vercel.json` rewrite missing; make sure Root Directory is `frontend` |
 | Build fails with "Refusing to build: VITE_…" | a secret-looking variable was added in Vercel; remove it (secrets belong on Render only) |
+
+---
+## Diagnosing a failing first recommendation request (diagnostic logging)
+
+The backend logs every stage of `POST /api/recommendations` under the logger name **`app.diag`**, tagged `[req=xxxxxx]` so one request can be followed
+through the log. In Render's **Logs** tab, search for `app.diag`. This needs `LOG_LEVEL=INFO` (the default in `render.yaml`). Nothing here changes behaviour,
+scoring or the API, and `PRELOAD_MODEL` stays `false`.
+
+**At startup** (one block per boot; a free instance boots again after every sleep):
+- `startup: python=… cpu_limit=0.10 cpus memory_limit=512MB …` shows what the container really has. Fields read `none` or `n/a` if Render does not expose them.
+- `startup: preload_model=False | model cache: dir=… verdict=READY | NOT FOUND | INCOMPLETE` says whether the model files are already on disk **at the path the app will read**
+  (`NOT FOUND` means the first request has to download ~90 MB; compare with the build log line `Model files are in …` or `WARNING: could not prefetch`).
+- `startup complete: the model is NOT loaded yet …`
+
+**Per request**, in order: `recommendation request: START` → `github issue discovery: START/DONE` → `Loading embedding model` → `model cache: …` →
+`model import (sentence_transformers + PyTorch): START/DONE` → `libraries: … torch_threads=N` → `model load (weights + tokenizer): START/DONE` → `Embedding model ready` →
+`embedding generation: START/DONE` → `ranking …: DONE` → `database storage: START/DONE` → `recommendation request: DONE`.
+Each line ends with `rss=` (this process now), `peak_rss=` (highest so far), `container=used/limit` (whole container, includes reclaimable file cache),
+`oom_kills=` (kills the kernel counted for this container), `proc_cpu=` (CPU seconds used by the process) and `throttled=N x/S s` (how often and how long the CPU limit paused it).
+DONE lines also show `in <wall seconds> (cpu <cpu seconds>)`. While the import, load or encoding runs, a `still running after N s | rss=…` line is logged every 3 to 5 seconds.
+
+| What you see | What it means |
+|---|---|
+| `still running` lines show `rss`/`peak_rss` climbing toward the limit, then **no more lines**; the next lines are a new `startup:` block **without** a `shutdown:` line before it; Render **Events** says "Ran out of memory" | memory exhaustion (the process was killed with SIGKILL, which cannot be logged). `peak_rss` on the last line shows how far it got |
+| a `shutdown: active stages=model import … [req=…]` line, then a new `startup:` block; Events says "Health check failed", a deploy, or a restart | Render **stopped** the instance (SIGTERM); not an out-of-memory kill |
+| `still running` lines keep coming, `rss` is flat and well below the limit, wall time grows much faster than `(cpu …)`, `throttled=` keeps rising | the process is alive but **starved of CPU** (0.1 CPU): the request is just slow, and may outlive the browser's wait. The backend keeps working after the browser gives up |
+| `model cache … verdict=NOT FOUND` or `INCOMPLETE`, and `model load` takes long with a small `(cpu …)` | the model is being **downloaded** (network/disk wait), so the build-time prefetch did not land where the app reads |
+| `Embedding model load FAILED … full traceback follows` | a real error with its cause in the traceback (the API then answers 503 `service_unavailable`) |
+| everything through `ranking …: DONE`, then `database storage: FAILED` | a database problem, not the model |
+| `recommendation request: FAILED … (CancelledError)` | the request was cancelled while still in the async part (client went away) |
+
+Also check in the Render dashboard: **Events** (out of memory, health-check failures, restarts), **Metrics** (memory against the 512 MB line, CPU), and in the browser's
+Network tab the status and how long the POST ran before failing. A proxy-generated 502/504 has no CORS headers, so the browser reports it as "Cannot reach the backend".
